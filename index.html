@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */
+      min-height: 100vh; /* Ensure full viewport height */
+      margin: 0; /* Remove default margin */
+    }
+    #app {
+      display: grid;
+      grid-template-columns: 1fr; /* Single column layout for centering */
+      justify-items: center; /* Center grid items horizontally */
+      align-items: center; /* Center grid items vertically */
+      width: 100%; /* Full width of viewport */
+      height: 100%; /* Full height of viewport */
+      max-width: 1280px; /* Optional: Set a maximum width */
+      padding: 2rem;
+      box-sizing: border-box; /* Include padding in width and height */
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
