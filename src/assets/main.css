@@ -1,12 +1,13 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  font-weight: normal;
 }
-
+body {
+  background-color: #dadcb8; /* Replace with your desired color */
+}
 a,
 .green {
   text-decoration: none;

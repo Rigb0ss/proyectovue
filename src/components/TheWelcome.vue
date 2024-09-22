@@ -5,84 +5,81 @@ import ToolingIcon from './icons/IconTooling.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
+import HabilitationsIcon from './icons/IconHabilitations.vue'
+import PriceIcon from './icons/IconPrice.vue'
+
 </script>
 
 <template>
-  <WelcomeItem>
+<WelcomeItem>
     <template #icon>
-      <DocumentationIcon />
+      <ToolingIcon />
     </template>
-    <template #heading>Documentation</template>
-
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
+    <template #heading>Ubicación</template>
+    <span class="black-text">Ruta 12 Km 381. A 1500m de la entrada a Pueblo Edén y 26 km de Solanas.</span>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <ToolingIcon />
+      <DocumentationIcon />
     </template>
-    <template #heading>Tooling</template>
+    <template #heading>Caracteristicas</template>
 
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank" rel="noopener"
-      >Cypress Component Testing</a
-    >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
+    <span class="black-text">Fracciones de 125m de frente por 400m de fondo (excepto la fracción nº7 que cuenta con algo más de 5há.) <br> Orientadas hacia el norte, con lo cual se obtiene una vista privilegiada tanto de la salida como de la puesta del sol.</span>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <EcosystemIcon />
     </template>
-    <template #heading>Ecosystem</template>
+    <template #heading>Relieve</template>
 
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
+    <span class="black-text">El punto más alto sobre el nivel del mar se encuentra en la fracción nº7 y es de 128 metros.<br>El punto más bajo está en la fracción nº4 y es de 88 metros.<br>Todas tienen alturas que superan los 100 metros.</span>
+
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <CommunityIcon />
     </template>
-    <template #heading>Community</template>
+    <template #heading>Ecosistema</template>
 
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
+    <span class="black-text">Vegetación de especies autóctonas, tajamares, cañada y cerco de pierda.</span>
+
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
       <SupportIcon />
     </template>
-    <template #heading>Support Vue</template>
+    <template #heading>Accesos</template>
 
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
+    <span class="black-text">Servidumbre de paso por la que se accede a 200 metros de la ruta 12, por donde pasa el tendido de UTE.</span>
+
+  </WelcomeItem>
+
+  <WelcomeItem>
+    <template #icon>
+      <HabilitationsIcon />
+    </template>
+    <template #heading>Habilitaciones</template>
+    <span class="black-text">Fraccionamiento aprobado por la Dirección Nacional de Catastro y la Intendencia Departamental de Maldonado. Pronto para escriturar.</span>
+  </WelcomeItem>
+
+  <WelcomeItem class="no-lines">
+    <template #icon>
+      <PriceIcon />
+    </template>
+    <template #heading>Precio</template>
+    <span class="black-text">100.000 Dólares.</span>
   </WelcomeItem>
 </template>
+
+<style scoped>
+.black-text {
+  color: black;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+
+}
+</style>
